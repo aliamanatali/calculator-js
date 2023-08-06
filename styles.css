@@ -1,27 +1,40 @@
 .btn {
-    width: 100%;
-    height: 35px;
-    /* border: 1px solid #ccc; */
-    padding: 0px;
-    margin-top: 5px;
-  }
-
-.gg{
-  /* max-width: 350px; */
+  width: 100%;
+  height: 35px;
+  padding: 0px;
+  margin-top: 5px;
+  border: 0px;
 }
 
 body {
   background-color: black;
   color: white;
 }
+
 .gg {
   margin-top: 90px;
 }
 
+.row button {
+  margin-top: 5px;
+  /* width: 10%; */
+  border-radius: 5px;
+  background-color: #c2a504;
+  color: white;
+  border: 0px;
+  margin-left: 5px;
+}
+
+.row button:hover {
+  background-color: #23272b;
+  border-color: #23272b;
+}
+
 .btn-primary {
   background-color: #343a40;
-  border-color: #343a40;
+  /* border-color: #343a40; */
 }
+
 
 .btn-primary:hover {
   background-color: #23272b;
@@ -33,37 +46,61 @@ body {
   border-color: #1d2124;
 }
 
+#ClickMe {
+  background-color: #922727;
+  border-radius: 5px;
+  width: 18%;
+  border: 0px;
+}
+
+#ClickMe:hover {
+  background-color: #343a40;
+  border-color: #23272b;
+}
+
 .form-control {
   background-color: #343a40;
   color: white;
   border-color: #343a40;
 }
+
+#NameBar,
+#ValueBar {
+  width: 40%;
+}
+
 input[readonly] {
-  background-color: #343a40!important;
-  }
+  background-color: #343a40 !important;
+}
+
 h1 {
   margin-bottom: 20px;
 }
 
-.ttt{
+.ttt {
   padding-left: 2px;
   padding-right: 2px;
 }
-.jj{
+
+.jj {
   padding: 0px;
   /* margin-bottom: 3px; */
 }
-.jj input{
+
+.jj input {
   width: 100%;
   margin-top: 5px;
 }
-.changecolor{
+
+.changecolor {
   background-color: #922727;
 }
-.operator{
+
+.operator {
   background-color: #c2a504;
 }
-.col-7{
+
+.col-7 {
   max-width: 35%;
   margin-left: 8%;
 }

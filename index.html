@@ -9,69 +9,71 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" alt="styles">
 </head>
+
 <body>
   <div class="container  gg">
     <div class="row ">
-      <div class="col-5 mt-5">
+      <div class="col-5 mt-5 ">
         <div class="row mt-5">
-          <!-- <input type="text" value="" id="NameBar" placeholder="Enter variable name" onblur="variableNameInput()">
-          <input type="text" value="" id="ValueBar" placeholder="Enter value" onblur="variableValueInput()"> -->
-          <input type="text" value="" id="NameBar" placeholder="Enter variable name">
-          <input type="text" value="" id="ValueBar" placeholder="Enter value">
-          <input type="button" value="Enter" id="ClickMe" onclick="variableValueInput()">
+          <input type="text" value="" class="form-control" id="NameBar" placeholder="Enter variable name">
+          <input type="text" value="" class="form-control ml-1" id="ValueBar" placeholder="Enter value">
+          <input type="button" value="Enter" class="btn-primary ml-1" id="ClickMe" onclick="variableValueInput()">
         </div>
-      </div>
-    <div class="col-7 ">
-      <h1 class="text-center ">Calculator</h1>
-      <div class="row">
-        <div class="col jj">
-          <input type="text" class="form-control" id="show" value="" placeholder="Output value" readonly>
-          <input type="text" class="form-control" id="display" value="" placeholder="Enter expression">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3 ttt">
-          <input type="button" value="tan" class="btn btn-primary" onclick="appendExp('tan(')">
-          <input type="button" value="e" class="btn btn-primary" onclick="appendExp('e')">
-          <input type="button" value="(" class="btn btn-primary" onclick="appendExp('(')">
-          <input type="button" value="7" class="btn btn-primary" onclick="appendExp('7')">
-          <input type="button" value="4" class="btn btn-primary" onclick="appendExp('4')">
-          <input type="button" value="1" class="btn btn-primary" onclick="appendExp('1')">
-          <input type="button" value="0" class="btn btn-primary" onclick="appendExp('0')">
-        </div>
-        <div class="col-3 ttt">
-          <input type="button" value="sin" class="btn btn-primary" onclick="appendExp('sin(')">
-          <input type="button" value="π" class="btn btn-primary" onclick="appendExp('π')">
-          <input type="button" value=")" class="btn btn-primary" onclick="appendExp(')')">
-          <input type="button" value="8" class="btn btn-primary" onclick="appendExp('8')">
-          <input type="button" value="5" class="btn btn-primary" onclick="appendExp('5')">
-          <input type="button" value="2" class="btn btn-primary" onclick="appendExp('2')">
-          <input type="button" value="^" class="btn btn-primary" onclick="appendExp('^')">
-        </div>
-        <div class="col-3 ttt">
-          <input type="button" value="cos" class="btn btn-primary" onclick="appendExp('cos(')">
-          <input type="button" value="(" class="btn btn-primary" onclick="appendExp('(')">
-          <input type="button" value="sqrt" class="btn btn-primary" onclick="appendExp('sqrt(')">
-          <input type="button" value="9" class="btn btn-primary" onclick="appendExp('9')">
-          <input type="button" value="6" class="btn btn-primary" onclick="appendExp('6')">
-          <input type="button" value="3" class="btn btn-primary" onclick="appendExp('3')">
+        <div class="row" id="buttonBnao">
 
-          <input type="button" value="." class="btn btn-primary" onclick="appendExp('.')">
-        </div>
-        <div class="col-3 ttt">
-          <input type="button" value="AC" class="btn btn-primary changecolor" onclick="clearKardo()">
-                    <input type="button" value="C" class="btn btn-primary" onclick="backspaceKardo()">
-          <input type="button" value="/" class="btn btn-primary operator" onclick="appendExp('/')">
-          <input type="button" value="*" class="btn btn-primary operator" onclick="appendExp('*')">
-          <input type="button" value="+" class="btn btn-primary operator" onclick="appendExp('+')">
-          <input type="button" value="-" class="btn btn-primary operator" onclick="appendExp('-')">
-          <input type="button" value="=" class="btn btn-primary" onclick="calculate()">
         </div>
       </div>
+      <div class="col-7 ">
+        <h1 class="text-center ">Calculator Pro</h1>
+        <div class="row">
+          <div class="col jj">
+            <input type="text" class="form-control" id="show" value="" placeholder="Output value" readonly>
+            <input type="text" class="form-control" id="display" value="" placeholder="Enter expression">
+          </div>
 
+        </div>
+        <div class="row">
+          <div class="col-3 ttt">
+            <input type="button" value="tan" class="btn btn-primary" onclick="appendExp('tan(')">
+            <input type="button" value="e" class="btn btn-primary" onclick="appendExp('e')">
+            <input type="button" value="(" class="btn btn-primary" onclick="appendExp('(')">
+            <input type="button" value="7" class="btn btn-primary" onclick="appendExp('7')">
+            <input type="button" value="4" class="btn btn-primary" onclick="appendExp('4')">
+            <input type="button" value="1" class="btn btn-primary" onclick="appendExp('1')">
+            <input type="button" value="0" class="btn btn-primary" onclick="appendExp('0')">
+          </div>
+          <div class="col-3 ttt">
+            <input type="button" value="sin" class="btn btn-primary" onclick="appendExp('sin(')">
+            <input type="button" value="π" class="btn btn-primary" onclick="appendExp('π')">
+            <input type="button" value=")" class="btn btn-primary" onclick="appendExp(')')">
+            <input type="button" value="8" class="btn btn-primary" onclick="appendExp('8')">
+            <input type="button" value="5" class="btn btn-primary" onclick="appendExp('5')">
+            <input type="button" value="2" class="btn btn-primary" onclick="appendExp('2')">
+            <input type="button" value="^" class="btn btn-primary" onclick="appendExp('^')">
+          </div>
+          <div class="col-3 ttt">
+            <input type="button" value="cos" class="btn btn-primary" onclick="appendExp('cos(')">
+            <input type="button" value="%" class="btn btn-primary" onclick="appendExp('%')">
+            <input type="button" value="sqrt" class="btn btn-primary" onclick="appendExp('sqrt(')">
+            <input type="button" value="9" class="btn btn-primary" onclick="appendExp('9')">
+            <input type="button" value="6" class="btn btn-primary" onclick="appendExp('6')">
+            <input type="button" value="3" class="btn btn-primary" onclick="appendExp('3')">
+            <input type="button" value="." class="btn btn-primary" onclick="appendExp('.')">
+          </div>
+          <div class="col-3 ttt">
+            <input type="button" value="AC" class="btn btn-primary changecolor" onclick="clearKardo()">
+            <input type="button" value="C" id="Backspace" class="btn btn-primary" onclick="handleBackspace()">
+            <input type="button" value="/" class="btn btn-primary operator" onclick="appendExp('/')">
+            <input type="button" value="*" class="btn btn-primary operator" onclick="appendExp('*')">
+            <input type="button" value="+" class="btn btn-primary operator" onclick="appendExp('+')">
+            <input type="button" value="-" class="btn btn-primary operator" onclick="appendExp('-')">
+            <input type="button" value="=" class="btn btn-primary" onclick="calculate()">
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-  <script src="practice.js"></script>
+    <script src="practice.js"></script>
 </body>
 
 </html>
